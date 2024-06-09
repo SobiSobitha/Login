@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root{
+    --primary-color:rgb(227, 80, 227);
+    --secondary-color:rgb(255, 255, 255);
+}
+.login-page{
+    min-height: 100vh;
+    background: url('layered-steps-haikei.svg');
+    background-size: cover;
+    background-position: center;
+}
+.card{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 600px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background: rgb(96, 43, 96);
+    z-index: 100;
+}
+.card .card-1{
+    width: 100%;
+}
+.card-1 .login-card{
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--secondary-color);
+}
+.login-card h2{
+    font-size: 40px;
+}
+.login-card p{
+    font-size: 25px;
+    font-weight: 500;
+}
+.card-1 .input{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    margin: 30px 0;
+}
+.input input{
+    width: 100%;
+    height: 100%;
+    background:rgb(153, 151, 151);
+    border: none;
+    outline: none;
+    font-size: 25px;
+    color: var(--secondary-color);
+    font-weight: 500;
+    padding-right: 25px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.input label{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.card-1 .forget{
+    font-size: 19px;
+    color: var(--secondary-color);
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+}
+.forget a{
+    justify-content: space-between;
+    text-decoration: none;
+    color: rgb(244, 18, 18);
+    padding: 1rem;
+}
+.forget a:hover{
+    text-decoration: underline;
+}
+.card-1 .btn{
+    width: 100%;
+    height: 50px;
+    background: var(--primary-color);
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    box-shadow: 0 2px 5px var(--secondary-color);
+    cursor: pointer;
+    font-size: 20px;
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+@media screen and (max-width:448px){
+    .login-page{
+        float: none;
+        width: 100%;
+    }
+}
+@media screen and (max-width:628px) {
+    .login-card{
+        position: relative;
+        top: 0;
+        right: 0;
+        padding: 2rem;
+        width:100%;
+        display:grid;
+        border-radius:5px;
+        justify-content:center;
+        flex-direction: column;
+        margin: 3px;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+}

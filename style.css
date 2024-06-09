@@ -8,7 +8,7 @@
     --primary-color:rgb(204, 56, 56);
     --secondary-color:rgb(255, 255, 255);
 }
-.login-page{
+.login-page img{
     min-height: 100vh;
     background:url('/stacked-steps-haikei.png');
     background-size: cover;
@@ -23,8 +23,6 @@
     display: flex;
     align-items: center;
     background: rgb(62, 61, 61);
-    animation-duration: 5s ease-in-out;
-    animation:alternate-reverse;
     z-index: 100;
 }
 .card .card-1{
